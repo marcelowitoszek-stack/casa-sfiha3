@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Casa da Sfiha - Culinária árabe artesanal em Curitiba. Sfihas, beirutes e doces árabes feitos com tradição e ingredientes selecionados.">
+    <meta name="theme-color" content="#385916">
+
+    <!-- Open Graph para compartilhamento -->
+    <meta property="og:title" content="Casa da Sfiha - Culinária Árabe Artesanal">
+    <meta property="og:description"
+        content="Sfihas, beirutes e doces árabes feitos com tradição, carinho e ingredientes selecionados.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:locale" content="pt_BR">
+
+    <title>Casa da Sfiha | Culinária Árabe Artesanal em Curitiba</title>
+
+    <!-- Favicon placeholder -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23385916'>🌯</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON-LD Schema para Restaurante -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Casa da Sfiha",
+        "url": "https://www.casadasfiha.com.br",
+        "telephone": "41 3095-2330",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Teixeira Coelho, 61, loja 04",
+            "addressLocality": "Curitiba",
+            "addressRegion": "PR",
+            "postalCode": "80420-150",
+            "addressCountry": "BR"
+        },
+        "priceRange": "$$",
+        "cuisine": "Arab",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "11:30",
+                "closes": "21:00"
+            }
+        ],
+        "sameAs": [
+            "https://maps.app.goo.gl/wYWVUgiZSMS3B4j86"
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- ========== HEADER STICKY ========== -->
+    <header class="header">
+        <div class="header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">Casa da Sfiha</span>
+                </a>
+            </div>
+
+            <!-- Menu Hamburguer (Mobile) -->
+            <button class="header__menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navegação -->
+            <nav class="header__nav" id="headerNav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link nav-active">Início</a></li>
+                    <li><a href="sobre.html" class="header__nav-link">Sobre</a></li>
+                    <li><a href="pedidos.html" class="header__nav-link">Pedidos</a></li>
+                    <li><a href="contato.html" class="header__nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão CTA Principal -->
+            <a href="pedidos.html" class="header__cta">Pedidos Aqui</a>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero"
+        style="background: linear-gradient(135deg, rgba(56, 89, 22, 0.8) 0%, rgba(89, 2, 2, 0.8) 100%), url('images/casa-da-sfiha-hero.jpg') center/cover;">
+        <div class="hero__content">
+            <h1 class="hero__title">Delícias é aqui na Casa da Sfira, coração do Batel</h1>
+            <p class="hero__subtitle">Produção artesanal em cada mordida. Venha experimentar a autenticidade.</p>
+
+            <div class="hero__buttons">
+                <a href="pedidos.html" class="btn btn--primary">Pedidos Aqui</a>
+                <a href="sobre.html" class="btn btn--secondary">Conheça Nossa História</a>
+            </div>
+        </div>
+        <!-- Placeholder para imagem de fundo -->
+        <div class="hero__background"
+            style="background: linear-gradient(135deg, rgba(56, 89, 22, 0.7) 0%, rgba(89, 2, 2, 0.7) 100%), url('assets/images/hero-banner.jpg') center/cover; background-attachment: fixed;">
+        </div>
+    </section>
+
+    <!-- ========== SOBRE A HISTÓRIA ARTESANAL ========== -->
+    <section class="section about-story">
+        <div class="container">
+            <div class="about-story__grid">
+                <!-- Imagem -->
+                <div class="about-story__image">
+                    <!-- Placeholder: Substituir em assets/images/about-artisan.jpg -->
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=500&fit=crop"
+                        alt="Preparo artesanal de sfihas na cozinha da Casa da Sfiha" class="img-responsive">
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="about-story__content">
+                    <h2 class="section__title">Nossa História Artesanal</h2>
+
+                    <p class="about-story__text">
+                        A Casa da Sfiha é resultado da paixão por uma tradição milenar. Aqui, cada receita é preparada
+                        com o mesmo carinho que nossos antepassados utilizavam há gerações. Acreditamos que a culinária
+                        árabe não é apenas alimento — é um ritual de acolhimento, de compartilhamento e de amor pela
+                        mesa.
+                    </p>
+
+                    <p class="about-story__text">
+                        Utilizamos ingredientes cuidadosamente selecionados, respeitando as técnicas tradicionais e a
+                        qualidade que define a autenticidade. Cada sfiha, cada beirute, cada doce árabe que sai de nossa
+                        cozinha carrega a essência de uma cultura que valoriza o bom gosto e o bem-estar de quem
+                        compartilha a refeição.
+                    </p>
+
+                    <div class="about-story__highlight">
+                        <p>"Tradição que se sente em cada mordida."</p>
+                    </div>
+
+                    <a href="sobre.html" class="btn btn--primary">Saiba Mais Sobre a Casa da Sfiha</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA DE IMPACTO ========== -->
+    <section class="cta-banner"
+        style="background: linear-gradient(135deg, rgba(56, 89, 22, 0.8) 0%, rgba(89, 2, 2, 0.8) 100%), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&h=400&fit=crop') center/cover;">
+        <div class="container">
+            <div class="cta-banner__content">
+                <h1 class="cta-banner__title">Acabe com a sua vontade de comer, peça na Casa da Sfira
+                </h1>
+                <a href="pedidos.html" class="btn btn--tertiary">Pedidos Aqui</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SEÇÃO CARDÁPIO ========== -->
+    <section class="section menu-showcase">
+        <div class="container">
+            <h1 class="section__title">Sabores para Todos os Momentos Experimente os da Casa da Sfira</h1>
+
+            <!-- Carrossel -->
+            <div class="carousel">
+                <div class="carousel__track" id="carouselTrack">
+                    <!-- Card 1: Sfihas -->
+                    <div class="carousel__slide">
+                        <div class="menu-card">
+                            <div class="menu-card__image">
+                                <img src="https://images.unsplash.com/photo-1565958011504-98d6b56dd371?w=400&h=300&fit=crop"
+                                    alt="Sfihas recheadas - Especialidade da Casa da Sfiha" class="img-responsive">
+                            </div>
+                            <div class="menu-card__content">
+                                <h3 class="menu-card__title">Sfihas</h3>
+                                <p class="menu-card__description">Folhas crocantes recheadas com carnes, queijos e
+                                    temperos autênticos</p>
+                                <a href="pedidos.html" class="menu-card__link">Ver Opções →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Beirutes -->
+                    <div class="carousel__slide">
+                        <div class="menu-card">
+                            <div class="menu-card__image">
+                                <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&h=300&fit=crop"
+                                    alt="Beirutes - Sanduíches árabes tradicionais" class="img-responsive">
+                            </div>
+                            <div class="menu-card__content">
+                                <h3 class="menu-card__title">Beirutes</h3>
+                                <p class="menu-card__description">Sanduíches árabes com carnes grelhadas, vegetais
+                                    frescos e molhos especiais</p>
+                                <a href="pedidos.html" class="menu-card__link">Ver Opções →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Doces Árabes -->
+                    <div class="carousel__slide">
+                        <div class="menu-card">
+                            <div class="menu-card__image">
+                                <img src="https://images.unsplash.com/photo-1585518419759-71145c13c64a?w=400&h=300&fit=crop"
+                                    alt="Doces árabes - Baklava e doçarias tradicionais" class="img-responsive">
+                            </div>
+                            <div class="menu-card__content">
+                                <h3 class="menu-card__title">Doces Árabes</h3>
+                                <p class="menu-card__description">Baklava, m'amoul e delícias doces feitas com mel,
+                                    nozes e pistache</p>
+                                <a href="pedidos.html" class="menu-card__link">Ver Opções →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Molhos -->
+                    <div class="carousel__slide">
+                        <div class="menu-card">
+                            <div class="menu-card__image">
+                                <img src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=400&h=300&fit=crop"
+                                    alt="Molhos artesanais - Homus, tahine e patês árabes" class="img-responsive">
+                            </div>
+                            <div class="menu-card__content">
+                                <h3 class="menu-card__title">Molhos Artesanais</h3>
+                                <p class="menu-card__description">Homus, tahine, baba ganoush e patês feitos
+                                    artesanalmente</p>
+                                <a href="pedidos.html" class="menu-card__link">Ver Opções →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Bebidas -->
+                    <div class="carousel__slide">
+                        <div class="menu-card">
+                            <div class="menu-card__image">
+                                <img src="https://images.unsplash.com/photo-1553530666-ba953a5ad39f?w=400&h=300&fit=crop"
+                                    alt="Bebidas - Chás e sucos árabes refrescantes" class="img-responsive">
+                            </div>
+                            <div class="menu-card__content">
+                                <h3 class="menu-card__title">Bebidas</h3>
+                                <p class="menu-card__description">Chás árabes, sucos naturais e bebidas refrescantes
+                                    tradicionales</p>
+                                <a href="pedidos.html" class="menu-card__link">Ver Opções →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles do Carrossel -->
+                <div class="carousel__controls">
+                    <button class="carousel__button carousel__button--prev" id="carouselPrev"
+                        aria-label="Slide anterior">❮</button>
+                    <div class="carousel__indicators" id="carouselIndicators"></div>
+                    <button class="carousel__button carousel__button--next" id="carouselNext"
+                        aria-label="Próximo slide">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA WHATSAPP ========== -->
+    <section class="section whatsapp-cta">
+        <div class="container">
+            <h2 class="whatsapp-cta__title">Ficou com água na boca?</h2>
+            <p class="whatsapp-cta__subtitle">Fale com a Casa da Sfiha</p>
+
+            <a href="https://wa.me/41991750506?text=Olá! Gostaria de fazer um pedido na Casa da Sfiha." target="_blank"
+                rel="noopener noreferrer" class="btn btn--success">
+                💬 Pedir pelo WhatsApp
+            </a>
+
+            <!-- Nota: Placeholder de WhatsApp configurável
+            Para usar um número diferente, substitua:
+            https://wa.me/41991750506 por https://wa.me/[SEU_NUMERO_COM_CODIGO_PAIS]
+            -->
+        </div>
+    </section>
+
+    <!-- ========== AVALIAÇÕES ========== -->
+    <section class="section reviews">
+        <div class="container">
+            <h2 class="section__title">O Que Nossos Clientes Dizem</h2>
+
+            <!-- Placeholder: Esses são comentários de demonstração
+            Para adicionar avaliações reais, substitua os cards abaixo com dados reais do Google Maps ou deixe estruturado para integração via API -->
+
+            <div class="reviews__grid">
+                <!-- Card 1 -->
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">
+                        "As sfihas da Casa da Sfiha são simplesmente incríveis! Massa crocante, recheio saboroso e
+                        temperação perfeita. Com certeza vou voltar!"
+                    </p>
+                    <p class="review-card__author">— Cliente Satisfeito</p>
+                    <p class="review-card__date">Recentemente</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">
+                        "Qualidade, autenticidade e acolhimento. A Casa da Sfiha tem tudo isso. Recomendo muito para
+                        quem quer conhecer a verdadeira culinária árabe."
+                    </p>
+                    <p class="review-card__author">— Cliente Satisfeito</p>
+                    <p class="review-card__date">Recentemente</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="review-card">
+                    <div class="review-card__stars">★★★★★</div>
+                    <p class="review-card__text">
+                        "Já comi em vários lugares, mas aqui é diferente. Cada coisa é feita com carinho. Vale muito a
+                        pena!"
+                    </p>
+                    <p class="review-card__author">— Cliente Satisfeito</p>
+                    <p class="review-card__date">Recentemente</p>
+                </div>
+            </div>
+
+            <div class="reviews__cta">
+                <a href="https://maps.app.goo.gl/wYWVUgiZSMS3B4j86" target="_blank" rel="noopener noreferrer"
+                    class="btn btn--primary">
+                    Ver Avaliações no Google
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LOCALIZAÇÃO E MAPA ========== -->
+    <section class="section location">
+        <div class="container">
+            <h2 class="section__title">Venha Nos Visitar</h2>
+
+            <div class="location__grid">
+                <!-- Mapa -->
+                <div class="location__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.485749019373!2d-49.28891762346813!3d-25.441265387053656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce38990947773%3A0xddafd2ebb3fb9949!2sR.%20Teixeira%20Coelho%2C%2061%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2080420-150!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da Casa da Sfiha no Google Maps"></iframe>
+                </div>
+
+                <!-- Informações -->
+                <div class="location__info">
+                    <h3>Endereço</h3>
+                    <p class="location__address">
+                        Rua Teixeira Coelho, 61, loja 04<br>
+                        Batel — Curitiba, PR
+                    </p>
+
+                    <h3>Contato</h3>
+                    <p>
+                        <strong>Telefone:</strong> <a href="tel:4130952330">41 3095-2330</a><br>
+                        <strong>WhatsApp:</strong> <a href="https://wa.me/41991750506" target="_blank"
+                            rel="noopener noreferrer">41 99175-0506</a>
+                    </p>
+
+                    <h3>Horário</h3>
+                    <p>2ª a Sábado — 11h 30min às 21h</p>
+
+                    <a href="https://www.google.com/maps/place/R.+Teixeira+Coelho,+61+-+Batel,+Curitiba+-+PR,+80420-150/@-25.4412655,-49.2889176,17z/"
+                        target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                        Como Chegar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FORMULÁRIO DE CONTATO ========== -->
+    <section class="section contact-form-section">
+        <div class="container">
+            <h2 class="section__title">Entre em Contato</h2>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name" class="form-label">Nome Completo *</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required
+                        aria-required="true">
+                    <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required
+                        aria-required="true">
+                    <span class="form-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Telefone</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(41) 99999-9999">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" class="form-label">Assunto *</label>
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder="Qual é o assunto?"
+                        required aria-required="true">
+                    <span class="form-error" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensagem *</label>
+                    <textarea id="message" name="message" class="form-input form-textarea"
+                        placeholder="Sua mensagem aqui..." rows="6" required aria-required="true"></textarea>
+                    <span class="form-error" id="messageError"></span>
+                </div>
+
+                <div class="form-group form-group--checkbox">
+                    <input type="checkbox" id="consent" name="consent" class="form-checkbox">
+                    <label for="consent" class="form-label form-label--checkbox">
+                        Autorizo receber contato e informações sobre promoções e novidades
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--large">Enviar Mensagem</button>
+
+                <!-- Mensagem de sucesso (frontend apenas) -->
+                <div class="form-success" id="formSuccess" style="display: none;">
+                    ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
+                </div>
+            </form>
+
+            <!-- Nota: Este formulário foi configurado para demonstração frontend apenas.
+            Para integração com backend, configure um dos seguintes serviços:
+            - Formspree (https://formspree.io/)
+            - EmailJS (https://www.emailjs.com/)
+            - Seu próprio backend (Node.js, PHP, etc.)
+            -->
+        </div>
+    </section>
+
+    <!-- ========== RODAPÉ ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Logo e descrição -->
+                <div class="footer__col">
+                    <h3 class="footer__logo">Casa da Sfiha</h3>
+                    <p class="footer__description">
+                        Culinária árabe artesanal, preparada com tradição, carinho e ingredientes selecionados.
+                    </p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Links Rápidos</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Início</a></li>
+                        <li><a href="sobre.html" class="footer__link">Sobre</a></li>
+                        <li><a href="pedidos.html" class="footer__link">Pedidos</a></li>
+                        <li><a href="contato.html" class="footer__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Contato</h4>
+                    <p class="footer__contact">
+                        📍 Rua Teixeira Coelho, 61, loja 04<br>
+                        Batel — Curitiba, PR<br><br>
+                        ☎️ <a href="tel:4130952330" class="footer__link">41 3095-2330</a><br>
+                        💬 <a href="https://wa.me/41991750506" target="_blank" rel="noopener noreferrer"
+                            class="footer__link">41 99175-0506</a>
+                    </p>
+                </div>
+
+                <!-- Horário -->
+                <div class="footer__col">
+                    <h4 class="footer__title">Horário</h4>
+                    <p class="footer__hours">
+                        2ª a Sábado<br>
+                        11h 30min às 21h<br><br>
+                        <a href="https://maps.app.goo.gl/wYWVUgiZSMS3B4j86" target="_blank" rel="noopener noreferrer"
+                            class="footer__link">
+                            Ir para Google Maps
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 Casa da Sfiha. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BOTÃO FLUTUANTE WHATSAPP ========== -->
+    <a href="https://wa.me/41991750506?text=Olá! Gostaria de fazer um pedido na Casa da Sfiha." target="_blank"
+        rel="noopener noreferrer" class="whatsapp-float" aria-label="Contato WhatsApp" title="Fale conosco no WhatsApp">
+        💬
+    </a>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

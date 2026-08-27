@@ -1,0 +1,270 @@
+═══════════════════════════════════════════════════════════════════════════════
+    🌯 CASA DA SFIHA — CHECKLIST DE CONFIGURAÇÃO RÁPIDA PARA HOSTINGER
+═══════════════════════════════════════════════════════════════════════════════
+
+ANTES DE FAZER UPLOAD, CONFIGURE OS SEGUINTES ITENS:
+
+─────────────────────────────────────────────────────────────────────────────
+1️⃣  WHATSAPP — MUDE O NÚMERO EM TODOS OS ARQUIVOS
+─────────────────────────────────────────────────────────────────────────────
+
+Número Atual: 41 99175-0506
+
+PROCURE POR:  https://wa.me/41991750506
+SUBSTITUA POR: https://wa.me/[SEU_NUMERO_COMPLETO_COM_CODIGO_PAIS]
+
+Exemplos:
+  • Brasil (Curitiba): https://wa.me/5541991750506
+  • Outro número Brasil: https://wa.me/55[DDD][NUMERO]
+  • Portugal: https://wa.me/351[NUMERO]
+
+Arquivos para editar:
+  ✓ index.html      (3 ocorrências)
+  ✓ sobre.html      (2 ocorrências)
+  ✓ pedidos.html    (3 ocorrências)
+  ✓ contato.html    (4 ocorrências)
+  ✓ css/style.css   (nenhuma)
+  ✓ js/script.js    (nenhuma)
+
+─────────────────────────────────────────────────────────────────────────────
+2️⃣  TELEFONE — MUDE EM TODOS OS ARQUIVOS
+─────────────────────────────────────────────────────────────────────────────
+
+Número Atual: 41 3095-2330
+
+PROCURE POR:  4130952330 (sem formatação)
+PROCURE POR:  41 3095-2330 (com formatação)
+SUBSTITUA POR: [SEU_NUMERO]
+
+Formato: (XX) XXXX-XXXX para Brasil
+
+Arquivos para editar:
+  ✓ index.html
+  ✓ sobre.html
+  ✓ pedidos.html
+  ✓ contato.html
+
+─────────────────────────────────────────────────────────────────────────────
+3️⃣  ENDEREÇO — MUDE EM TODOS OS ARQUIVOS
+─────────────────────────────────────────────────────────────────────────────
+
+Endereço Atual:
+  Rua Teixeira Coelho, 61, loja 04 — Batel, Curitiba, PR
+
+Substituir por seu endereço em:
+  ✓ index.html      (seção localização e rodapé)
+  ✓ sobre.html      (rodapé)
+  ✓ pedidos.html    (rodapé)
+  ✓ contato.html    (seção info de contato, mapa, rodapé)
+
+⚠️  OBS: O MAPA JÁ ESTÁ APONTANDO PARA ESSE ENDEREÇO
+Se mudar, considere atualizar o embed do Google Maps também.
+
+─────────────────────────────────────────────────────────────────────────────
+4️⃣  HORÁRIO DE FUNCIONAMENTO — MUDE EM TODOS OS ARQUIVOS
+─────────────────────────────────────────────────────────────────────────────
+
+Horário Atual:
+  2ª a Sábado — 11h 30min às 21h
+
+Procure por este texto em todos os arquivos HTML e substitua.
+
+─────────────────────────────────────────────────────────────────────────────
+5️⃣  IMAGENS — SUBSTITUA POR SUAS FOTOS
+─────────────────────────────────────────────────────────────────────────────
+
+As imagens estão atualmente usando URLs do Unsplash (placeholders).
+
+Para usar suas próprias imagens:
+
+1. Crie a pasta: assets/images/
+2. Adicione suas imagens lá:
+   - hero-banner.jpg
+   - about-artisan.jpg
+   - sfiha-category.jpg
+   - beirutes-category.jpg
+   - etc.
+
+3. Substitua as URLs nos arquivos HTML:
+
+   DE:  src="https://images.unsplash.com/photo-XXXX?..."
+   PARA: src="assets/images/sua-imagem.jpg"
+
+Imagens recomendadas:
+  ✓ Hero: 1920x1080px ou maior
+  ✓ Cards: 400x300px
+  ✓ Sobre: 600x500px
+  ✓ Mapa: 1200x600px
+
+⚠️  DICA: Comprima as imagens com TinyPNG (https://tinypng.com/) antes de subir
+
+─────────────────────────────────────────────────────────────────────────────
+6️⃣  FORMULÁRIO DE CONTATO — INTEGRE COM BACKEND (OPCIONAL)
+─────────────────────────────────────────────────────────────────────────────
+
+Opção A: FORMSPREE (Mais Fácil)
+  1. Acesse https://formspree.io/
+  2. Crie conta gratuita
+  3. Copie seu ID do formulário (ex: f/mykeyplh)
+  4. Em index.html, contato.html, linha do <form>:
+     Substitua: action="#" por action="https://formspree.io/f/SEU_ID"
+  5. Remova: id="contactForm" novalidate
+
+Opção B: EMAILJS (Sem Backend)
+  1. Acesse https://www.emailjs.com/
+  2. Crie conta gratuita
+  3. Copie Public Key
+  4. Adicione ao início do js/script.js:
+     emailjs.init("SEU_PUBLIC_KEY");
+
+Opção C: Backend Próprio
+  1. Configure seu próprio backend
+  2. Aponte o form para seu endpoint
+  3. Implemente lógica de envio de e-mail
+
+⚠️  IMPORTANTE: Sem integração, o formulário funciona apenas na frontend
+                (sem envio real de e-mails)
+
+─────────────────────────────────────────────────────────────────────────────
+7️⃣  CARRINHO DE PEDIDOS — DEMONSTRATIVO (OPCIONAL)
+─────────────────────────────────────────────────────────────────────────────
+
+Status: Funciona completamente em frontend com localStorage
+
+Se quiser integrar com pedidos REAIS:
+  • Conecte a um backend para armazenar pedidos
+  • Implemente pagamento (Stripe, PayPal, Pix)
+  • Adicione confirmação de pedido por e-mail
+  • Configure integração com sistema de delivery
+
+Hoje: Funciona apenas como carrinho de compras demonstrativo
+
+─────────────────────────────────────────────────────────────────────────────
+8️⃣  MAPA DO GOOGLE — VERIFICAR LOCALIZAÇÃO
+─────────────────────────────────────────────────────────────────────────────
+
+Localização Atual:
+  Rua Teixeira Coelho, 61, loja 04 — Batel, Curitiba, PR
+  Latitude: -25.4412655
+  Longitude: -49.2889176
+
+Se o endereço mudou, gere um novo embed:
+  1. Acesse Google Maps
+  2. Localize seu estabelecimento
+  3. Clique em compartilhar → Incorporar um mapa
+  4. Copie o código iframe
+  5. Substitua em index.html e contato.html (seção "Localização")
+
+─────────────────────────────────────────────────────────────────────────────
+9️⃣  GOOGLE MAPS (Link para Página)
+─────────────────────────────────────────────────────────────────────────────
+
+Link Atual: https://maps.app.goo.gl/wYWVUgiZSMS3B4j86
+
+Este link está funcional para Casa da Sfiha.
+Se usar endereço diferente, atualize o link em:
+  ✓ index.html (seção avaliações, rodapé)
+  ✓ sobre.html (rodapé)
+  ✓ pedidos.html (rodapé)
+  ✓ contato.html (seção info de contato, rodapé)
+
+Para gerar novo link:
+  1. Abra Google Maps
+  2. Clique em compartilhar
+  3. Copie o link curto (maps.app.goo.gl/...)
+
+─────────────────────────────────────────────────────────────────────────────
+🔟  AVALIAÇÕES DOS CLIENTES
+─────────────────────────────────────────────────────────────────────────────
+
+Status: Cardsde demonstração (não são reais)
+
+Para adicionar avaliações reais:
+  Opção 1: Google Reviews
+    • As avaliações aparecem automaticamente do Google My Business
+    • Integre API do Google Maps API
+  
+  Opção 2: Manual
+    • Edite os cards em index.html (seção "reviews")
+    • Adicione nomes e comentários reais de clientes
+
+Link para Reviews:
+  https://maps.app.goo.gl/wYWVUgiZSMS3B4j86 (atualizado)
+
+═════════════════════════════════════════════════════════════════════════════
+📋 RESUMO DE AÇÕES ANTES DO UPLOAD
+═════════════════════════════════════════════════════════════════════════════
+
+Obrigatórios:
+  ☐ 1. Substitua número WhatsApp (5 arquivos HTML)
+  ☐ 2. Substitua número telefone (4 arquivos HTML)
+  ☐ 3. Verifique endereço (4 arquivos HTML)
+  ☐ 4. Verifique horário (4 arquivos HTML)
+  ☐ 5. Adicione suas imagens em assets/images/
+  ☐ 6. Atualize URLs de imagens nos arquivos HTML
+
+Recomendados:
+  ☐ 7. Integre formulário com Formspree ou backend
+  ☐ 8. Teste tudo localmente antes de subir
+  ☐ 9. Verifique links de todas as páginas
+
+Opcionais:
+  ☐ 10. Integre carrinho com backend de pedidos
+  ☐ 11. Adicione Google Analytics
+  ☐ 12. Configure Google Ads/Facebook Pixel
+
+═════════════════════════════════════════════════════════════════════════════
+🚀 PARA FAZER UPLOAD NO HOSTINGER
+═════════════════════════════════════════════════════════════════════════════
+
+1. Acesse painel Hostinger
+2. Vá para: Hospedagem → Gerenciador de Arquivos
+3. Navegue até: public_html (ou raiz do seu domínio)
+4. Faça upload de TODOS os arquivos respeitando a estrutura:
+
+   /public_html/
+   ├── index.html
+   ├── sobre.html
+   ├── pedidos.html
+   ├── contato.html
+   ├── css/
+   │   └── style.css
+   ├── js/
+   │   └── script.js
+   └── assets/
+       ├── images/
+       │   ├── hero-banner.jpg
+       │   └── (outras imagens)
+       └── icons/
+
+5. Acesse seu domínio no navegador
+6. Teste todas as funcionalidades
+
+═════════════════════════════════════════════════════════════════════════════
+✅ VALIDAÇÃO FINAL
+═════════════════════════════════════════════════════════════════════════════
+
+Depois que subir para produção, teste:
+
+  ☐ Página inicial carrega corretamente
+  ☐ Menu mobile funciona
+  ☐ Carrossel funciona
+  ☐ Página "Sobre" abre
+  ☐ Página "Pedidos" abre e filtros funcionam
+  ☐ Carrinho adiciona/remove produtos
+  ☐ Página "Contato" abre
+  ☐ Formulário valida campos
+  ☐ Mapa carrega
+  ☐ Botão WhatsApp flutuante funciona
+  ☐ Links de telefone funcionam (tel:)
+  ☐ Responsividade no celular OK
+  ☐ Google Maps link abre em nova aba
+  ☐ Console do navegador sem erros (F12)
+
+═════════════════════════════════════════════════════════════════════════════
+
+✨ Seu site está completo e pronto para produção!
+
+Para dúvidas, consulte README.md ou os comentários no código.
+
+Boa sorte! 🌯
