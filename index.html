@@ -86,13 +86,13 @@
                 <ul class="header__nav-list">
                     <li><a href="index.html" class="header__nav-link nav-active">Início</a></li>
                     <li><a href="sobre.html" class="header__nav-link">Sobre</a></li>
-                    <li><a href="pedidos.html" class="header__nav-link">Pedidos</a></li>
+                    <li><a href="cardapio.html" class="header__nav-link">Cardápio</a></li>
                     <li><a href="contato.html" class="header__nav-link">Contato</a></li>
                 </ul>
             </nav>
 
             <!-- Botão CTA Principal -->
-            <a href="pedidos.html" class="header__cta">Pedidos Aqui</a>
+            <a href="cardapio.html" class="header__cta">Pedidos Aqui</a>
         </div>
     </header>
 
@@ -100,11 +100,11 @@
     <section class="hero" id="hero"
         style="background: linear-gradient(135deg, rgba(56, 89, 22, 0.8) 0%, rgba(89, 2, 2, 0.8) 100%), url('images/casa-da-sfiha-hero.jpg') center/cover;">
         <div class="hero__content">
-            <h1 class="hero__title">Delícias é aqui na Casa da Sfira, coração do Batel</h1>
+            <h1 class="hero__title">Delícias é aqui na Casa da Sfiha, coração do Batel</h1>
             <p class="hero__subtitle">Produção artesanal em cada mordida. Venha experimentar a autenticidade.</p>
 
             <div class="hero__buttons">
-                <a href="pedidos.html" class="btn btn--primary">Pedidos Aqui</a>
+                <a href="cardapio.html" class="btn btn--primary">Pedidos Aqui</a>
                 <a href="sobre.html" class="btn btn--secondary">Conheça Nossa História</a>
             </div>
         </div>
@@ -158,22 +158,243 @@
         style="background: linear-gradient(135deg, rgba(56, 89, 22, 0.8) 0%, rgba(89, 2, 2, 0.8) 100%), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&h=400&fit=crop') center/cover;">
         <div class="container">
             <div class="cta-banner__content">
-                <h1 class="cta-banner__title">Acabe com a sua vontade de comer, peça na Casa da Sfira
-                </h1>
-                <a href="pedidos.html" class="btn btn--tertiary">Pedidos Aqui</a>
+                <h2 class="cta-banner__title">Acabe com a sua vontade de comer, peça na Casa da Sfiha
+                </h2>
+                <a href="index.html" class="btn btn--tertiary">Pedidos Aqui</a>
             </div>
         </div>
     </section>
 
-    <!-- ========== SEÇÃO CARDÁPIO ========== -->
+
+
+    <!-- =========================================================
+     GALERIA INTERATIVA DE PRATOS
+     ========================================================= -->
+
+    <section class="section-showcase" id="destaques"><!-- -showcase id="destaques"-->
+
+        <div class="container">
+
+            <!-- Cabeçalho -->
+            <div class="dishes-showcase__header">
+
+                <span class="dishes-showcase__eyebrow">
+                    Sabores da Casa
+                </span>
+
+                <h2 class="section__title">
+                    Escolha seu sabor favorito
+                </h2>
+
+                <p class="dishes-showcase__intro">
+                    Conheça algumas das delícias preparadas artesanalmente
+                    na Casa da Sfiha. Clique nas imagens para descobrir
+                    cada sabor.
+                </p>
+
+            </div>
+
+
+            <!-- Área principal -->
+            <div class="dishes-gallery">
+
+                <!-- Imagem principal -->
+                <div class="dishes-gallery__featured">
+
+                    <div class="dishes-gallery__image-wrapper">
+
+                        <img id="dishFeaturedImage" src="assets/images/sfiha-carne.jpg"
+                            alt="Sfiha de carne artesanal da Casa da Sfiha" class="dishes-gallery__featured-image">
+
+                        <div class="dishes-gallery__badge">
+                            Casa da Sfiha
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Informações do prato -->
+                <div class="dishes-gallery__info">
+
+                    <span class="dishes-gallery__category" id="dishCategory">
+                        SFIHAS
+                    </span>
+
+                    <h3 class="dishes-gallery__title" id="dishTitle">
+                        Sfiha de Carne
+                    </h3>
+
+                    <div class="dishes-gallery__price" id="dishPrice">
+                        R$ 00,00
+                    </div>
+
+                    <p class="dishes-gallery__description" id="dishDescription">
+                        Uma deliciosa sfiha preparada artesanalmente,
+                        com recheio saboroso e temperos cuidadosamente
+                        selecionados.
+                    </p>
+
+
+                    <!-- Ingredientes -->
+                    <div class="dishes-gallery__ingredients">
+
+                        <h4>
+                            Ingredientes
+                        </h4>
+
+                        <p id="dishIngredients">
+                            Carne temperada, cebola, tomate e
+                            temperos especiais.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Destaque -->
+                    <div class="dishes-gallery__highlight">
+
+                        <span class="dishes-gallery__highlight-icon">
+                            ✦
+                        </span>
+
+                        <span id="dishHighlight">
+                            Preparação artesanal
+                        </span>
+
+                    </div>
+
+
+                    <!-- CTA -->
+                    <a href="cardapio.html" class="btn btn--primary dishes-gallery__button">
+                        Ver opções e pedir
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Miniaturas -->
+            <div class="dishes-gallery__navigation">
+
+                <button type="button" class="dishes-gallery__arrow dishes-gallery__arrow--prev" id="dishPrev"
+                    aria-label="Prato anterior">
+                    ❮
+                </button>
+
+
+                <div class="dishes-gallery__thumbnails" id="dishThumbnails">
+
+
+                    <!-- PRATO 1 -->
+
+                    <button type="button" class="dish-thumbnail active" data-image="assets/images/sfiha-carne.jpg"
+                        data-alt="Sfiha de carne artesanal" data-category="SFihas" data-title="Sfiha de Carne"
+                        data-price="R$ 00,00"
+                        data-description="Uma deliciosa sfiha preparada artesanalmente, com recheio saboroso e temperos cuidadosamente selecionados."
+                        data-ingredients="Carne temperada, cebola, tomate e temperos especiais."
+                        data-highlight="Preparação artesanal">
+
+                        <img src="assets/images/sfiha-carne.jpg" alt="Sfiha de carne">
+
+                    </button>
+
+
+                    <!-- PRATO 2 -->
+
+                    <button type="button" class="dish-thumbnail" data-image="assets/images/sfiha-queijo.jpg"
+                        data-alt="Sfiha de queijo artesanal" data-category="SFihas" data-title="Sfiha de Queijo"
+                        data-price="R$ 00,00"
+                        data-description="Massa artesanal combinada com um recheio cremoso e saboroso, perfeita para quem aprecia uma opção mais suave."
+                        data-ingredients="Queijo, temperos selecionados e massa artesanal."
+                        data-highlight="Sabor e cremosidade">
+
+                        <img src="assets/images/sfiha-queijo.jpg" alt="Sfiha de queijo">
+
+                    </button>
+
+
+                    <!-- PRATO 3 -->
+
+                    <button type="button" class="dish-thumbnail" data-image="assets/images/beirute.jpg"
+                        data-alt="Beirute artesanal da Casa da Sfiha" data-category="BEIRUTES" data-title="Beirute"
+                        data-price="R$ 00,00"
+                        data-description="Sanduíche árabe preparado com ingredientes selecionados, combinando sabores marcantes e uma experiência completa."
+                        data-ingredients="Carne grelhada, vegetais frescos e molho especial."
+                        data-highlight="Clássico da culinária árabe">
+
+                        <img src="assets/images/beirute.jpg" alt="Beirute">
+
+                    </button>
+
+
+                    <!-- PRATO 4 -->
+
+                    <button type="button" class="dish-thumbnail" data-image="assets/images/baklava.jpg"
+                        data-alt="Doce árabe da Casa da Sfiha" data-category="DOCES ÁRABES" data-title="Baklava"
+                        data-price="R$ 00,00"
+                        data-description="Uma tradicional sobremesa árabe que combina texturas delicadas e sabores marcantes."
+                        data-ingredients="Massa, mel, nozes e pistache." data-highlight="Doçaria árabe tradicional">
+
+                        <img src="assets/images/baklava.jpg" alt="Baklava">
+
+                    </button>
+
+
+                    <!-- PRATO 5 -->
+
+                    <button type="button" class="dish-thumbnail" data-image="assets/images/homus.jpg"
+                        data-alt="Homus artesanal da Casa da Sfiha" data-category="MOLHOS ARTESANAIS" data-title="Homus"
+                        data-price="R$ 00,00"
+                        data-description="Preparação tradicional da culinária árabe, feita artesanalmente para acompanhar diferentes momentos da refeição."
+                        data-ingredients="Grão-de-bico, tahine, limão e temperos." data-highlight="Receita tradicional">
+
+                        <img src="assets/images/homus.jpg" alt="Homus artesanal">
+
+                    </button>
+
+
+                    <!-- PRATO 6 -->
+
+                    <button type="button" class="dish-thumbnail" data-image="assets/images/bebidas.jpg"
+                        data-alt="Bebidas da Casa da Sfiha" data-category="BEBIDAS" data-title="Bebidas"
+                        data-price="R$ 00,00"
+                        data-description="Opções refrescantes para acompanhar as especialidades da Casa da Sfiha."
+                        data-ingredients="Consulte as opções disponíveis."
+                        data-highlight="Para acompanhar sua refeição">
+
+                        <img src="assets/images/bebidas.jpg" alt="Bebidas">
+
+                    </button>
+
+                </div>
+
+
+                <button type="button" class="dishes-gallery__arrow dishes-gallery__arrow--next" id="dishNext"
+                    aria-label="Próximo prato">
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ========== SEÇÃO CARDÁPIO ========== 
     <section class="section menu-showcase">
         <div class="container">
-            <h1 class="section__title">Sabores para Todos os Momentos Experimente os da Casa da Sfira</h1>
+            <h2 class="section__title">Sabores para Todos os Momentos Experimente os da Casa da Sfiha</h2>
 
-            <!-- Carrossel -->
+            <!- Carrossel ->
             <div class="carousel">
                 <div class="carousel__track" id="carouselTrack">
-                    <!-- Card 1: Sfihas -->
+                    <!- Card 1: Sfihas ->
                     <div class="carousel__slide">
                         <div class="menu-card">
                             <div class="menu-card__image">
@@ -189,7 +410,7 @@
                         </div>
                     </div>
 
-                    <!-- Card 2: Beirutes -->
+                    <!- Card 2: Beirutes ->
                     <div class="carousel__slide">
                         <div class="menu-card">
                             <div class="menu-card__image">
@@ -205,7 +426,7 @@
                         </div>
                     </div>
 
-                    <!-- Card 3: Doces Árabes -->
+                    <!- Card 3: Doces Árabes ->
                     <div class="carousel__slide">
                         <div class="menu-card">
                             <div class="menu-card__image">
@@ -221,7 +442,7 @@
                         </div>
                     </div>
 
-                    <!-- Card 4: Molhos -->
+                    <!- Card 4: Molhos ->
                     <div class="carousel__slide">
                         <div class="menu-card">
                             <div class="menu-card__image">
@@ -237,7 +458,7 @@
                         </div>
                     </div>
 
-                    <!-- Card 5: Bebidas -->
+                    <!- Card 5: Bebidas ->
                     <div class="carousel__slide">
                         <div class="menu-card">
                             <div class="menu-card__image">
@@ -254,7 +475,7 @@
                     </div>
                 </div>
 
-                <!-- Controles do Carrossel -->
+                <!- Controles do Carrossel ->
                 <div class="carousel__controls">
                     <button class="carousel__button carousel__button--prev" id="carouselPrev"
                         aria-label="Slide anterior">❮</button>
@@ -264,7 +485,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- ========== CTA WHATSAPP ========== -->
     <section class="section whatsapp-cta">
@@ -336,6 +557,200 @@
         </div>
     </section>
 
+
+    <!-- ========== FAQ - PERGUNTAS FREQUENTES ========== -->
+    <section class="section faq" id="faq">
+        <div class="container">
+
+            <div class="faq__header">
+                <span class="faq__eyebrow">Dúvidas Frequentes</span>
+                <h2 class="section__title">Perguntas Frequentes sobre a Casa da Sfiha</h2>
+                <p class="faq__intro">
+                    Encontre respostas para as principais dúvidas sobre nossa culinária árabe,
+                    cardápio, pedidos, atendimento e localização em Curitiba.
+                </p>
+            </div>
+
+            <div class="faq__list">
+
+                <!-- FAQ 1 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>O que é a Casa da Sfiha?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            A Casa da Sfiha é uma casa de culinária árabe artesanal em Curitiba,
+                            dedicada a preparar receitas tradicionais com carinho, ingredientes
+                            cuidadosamente selecionados e técnicas que valorizam a autenticidade
+                            da gastronomia árabe.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>Onde fica a Casa da Sfiha em Curitiba?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            A Casa da Sfiha está localizada na Rua Teixeira Coelho, 61, loja 04,
+                            no bairro Batel, em Curitiba, Paraná. É uma localização de fácil
+                            acesso para quem deseja conhecer nossa culinária árabe artesanal.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>Qual é o horário de funcionamento da Casa da Sfiha?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            A Casa da Sfiha funciona de segunda a sábado, das 11h30 às 21h.
+                            Recomendamos entrar em contato para confirmar o atendimento antes
+                            de realizar sua visita.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>Quais pratos são oferecidos na Casa da Sfiha?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            Nosso cardápio reúne diferentes opções da culinária árabe, incluindo
+                            sfihas, beirutes, doces árabes e molhos. As receitas valorizam sabores
+                            tradicionais e ingredientes selecionados para proporcionar uma
+                            experiência gastronômica especial.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>A Casa da Sfiha oferece sfihas artesanais?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            Sim. As sfihas são uma das especialidades da Casa da Sfiha. São
+                            preparadas artesanalmente e contam com opções de recheios, carnes,
+                            queijos e temperos que valorizam os sabores característicos da
+                            culinária árabe.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 6 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>A Casa da Sfiha oferece beirutes?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            Sim. O cardápio da Casa da Sfiha também conta com beirutes,
+                            tradicionais sanduíches da culinária árabe preparados com carnes
+                            grelhadas, vegetais frescos e molhos especiais.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 7 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>Quais doces árabes posso encontrar na Casa da Sfiha?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            A Casa da Sfiha também oferece doces árabes tradicionais, incluindo
+                            opções como baklava e m'amoul. São doces preparados com ingredientes
+                            característicos como mel, nozes e pistache.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 8 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>Como posso fazer um pedido na Casa da Sfiha?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            Você pode consultar as opções disponíveis na página de pedidos da
+                            Casa da Sfiha. O site também disponibiliza atendimento pelo WhatsApp
+                            para facilitar o contato e os pedidos.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ 9 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>Posso pedir pelo WhatsApp da Casa da Sfiha?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            Sim. A Casa da Sfiha disponibiliza atendimento pelo WhatsApp pelo
+                            número (41) 99175-0506. Você pode utilizar o canal para entrar em
+                            contato e solicitar informações sobre pedidos e atendimento.
+                        </p>
+
+                        <a href="https://wa.me/41991750506?text=Olá! Gostaria de fazer um pedido na Casa da Sfiha."
+                            target="_blank" rel="noopener noreferrer" class="faq__whatsapp">
+                            💬 Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </details>
+
+                <!-- FAQ 10 -->
+                <details class="faq__item">
+                    <summary class="faq__question">
+                        <span>Como entrar em contato ou chegar à Casa da Sfiha?</span>
+                        <span class="faq__icon">+</span>
+                    </summary>
+                    <div class="faq__answer">
+                        <p>
+                            Para falar com a Casa da Sfiha, você pode ligar para (41) 3095-2330
+                            ou enviar uma mensagem pelo WhatsApp no número (41) 99175-0506.
+                            Para chegar até nós, estamos na Rua Teixeira Coelho, 61, loja 04,
+                            no Batel, em Curitiba.
+                        </p>
+
+                        <a href="https://www.google.com/maps/place/R.+Teixeira+Coelho,+61+-+Batel,+Curitiba+-+PR,+80420-150/"
+                            target="_blank" rel="noopener noreferrer" class="faq__maps">
+                            📍 Como chegar
+                        </a>
+                    </div>
+                </details>
+
+            </div>
+
+            <div class="faq__cta">
+                <p>Ficou com alguma dúvida?</p>
+                <a href="contato.html" class="btn btn--primary">
+                    Entre em Contato
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
     <!-- ========== LOCALIZAÇÃO E MAPA ========== -->
     <section class="section location">
         <div class="container">
@@ -378,7 +793,7 @@
         </div>
     </section>
 
-    <!-- ========== FORMULÁRIO DE CONTATO ========== -->
+    <!-- ========== FORMULÁRIO DE CONTATO ========== 
     <section class="section contact-form-section">
         <div class="container">
             <h2 class="section__title">Entre em Contato</h2>
@@ -424,21 +839,21 @@
                     </label>
                 </div>
 
-                <button type="submit" class="btn btn--primary btn--large">Enviar Mensagem</button>
+                <button type="submit" class="btn btn--primary btn--large">Enviar Mensagem</button>  -->
 
-                <!-- Mensagem de sucesso (frontend apenas) -->
-                <div class="form-success" id="formSuccess" style="display: none;">
-                    ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
-                </div>
-            </form>
+    <!-- Mensagem de sucesso (frontend apenas) -->
+    <div class="form-success" id="formSuccess" style="display: none;">
+        ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
+    </div>
+    </form>
 
-            <!-- Nota: Este formulário foi configurado para demonstração frontend apenas.
+    <!-- Nota: Este formulário foi configurado para demonstração frontend apenas.
             Para integração com backend, configure um dos seguintes serviços:
             - Formspree (https://formspree.io/)
             - EmailJS (https://www.emailjs.com/)
             - Seu próprio backend (Node.js, PHP, etc.)
             -->
-        </div>
+    </div>
     </section>
 
     <!-- ========== RODAPÉ ========== -->
@@ -459,7 +874,7 @@
                     <ul class="footer__list">
                         <li><a href="index.html" class="footer__link">Início</a></li>
                         <li><a href="sobre.html" class="footer__link">Sobre</a></li>
-                        <li><a href="pedidos.html" class="footer__link">Pedidos</a></li>
+                        <li><a href="cardapio.html" class="footer__link">Pedidos</a></li>
                         <li><a href="contato.html" class="footer__link">Contato</a></li>
                     </ul>
                 </div>
